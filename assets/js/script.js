@@ -4,7 +4,13 @@ const tbody = document.querySelector("tbody");
 const ttareas = document.getElementById("ttareas");
 const trealizadas = document.getElementById("trealizadas");
 
-const tareas = [];
+const tareas = [
+    { id: 16, descripcion: "Hacer mercado", realizada: true },
+    { id: 60, descripcion: "Estudiar para la prueba", realizada: false },
+    { id: 24, descripcion: "Sacar a pasear a Tobby", realizada: false },
+  ];;
+
+  actualizarLista();
 
 btntarea.addEventListener("click", () => {
     const nuevatarea = inptarea.value.trim();
